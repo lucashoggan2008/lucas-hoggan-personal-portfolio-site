@@ -87,6 +87,8 @@ footer {
   margin-bottom: -5rem;
   margin-left: -1rem;
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 footer .column {
   border-right: solid 1px black;
@@ -183,7 +185,20 @@ div.welcome-container #scroll-btn {
     max-width: 80vw;
   }
   #home-page-good-photo-1 {
-    width: 34rem;
-    height: 68rem;
+    width: 60vw;
+    height: 120vw;
+  }
+  .section:nth-last-child(2) {
+    margin-bottom: 10rem;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer .column {
+    width: 100%;
+    border-bottom: 1px #99e1d9 solid;
+  }
+  footer .column * {
+    text-align: center;
   }
 }/*# sourceMappingURL=globals.css.map */

@@ -104,6 +104,8 @@ footer {
     margin-bottom: -5rem;
     margin-left: -1rem;
     display:flex;
+    justify-content: flex-start;
+    align-items: center;
 
     .column {
         border-right: solid 1px black;
@@ -216,7 +218,28 @@ div.welcome-container {
     }
 
     #home-page-good-photo-1 {
-        width: 34rem;
-        height: 68rem;
+        width: 60vw;
+        height: 120vw;
     }
+
+
+    .section:nth-last-child(2) {
+        margin-bottom: 10rem;
+    }
+
+    footer {
+       flex-direction: column;
+       
+       .column {
+        width: 100%;
+        border-bottom: 1px $pallete-4 solid ;
+        
+        * {
+            text-align: center;
+        }
+
+       }
+
+    }
+
 }
