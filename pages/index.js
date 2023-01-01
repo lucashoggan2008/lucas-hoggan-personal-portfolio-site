@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 
 
 export default function Home() {
@@ -19,15 +20,22 @@ export default function Home() {
           <div className="divider"></div>
           <div className="row">
             <p className="paragraph">Hi there! My name is Lucas and I am a 14 year old freelance developer. In my free time, I enjoy staying active and healthy by playing rugby and hitting the gym. I am passionate about technology and love using my skills to create and build new projects. I am always looking for new opportunities to challenge myself and expand my knowledge in the field of development, I am based in central Scotland. Thank you for visiting my website</p>
-            <img id="home-page-good-photo-1" src="/good-photo-1.jpg"/>
+            <Image id="home-page-good-photo-1" src="/good-photo-1.jpg" width="1000" height="1000" alt="Picture of me"/>
           </div>
         </div>
         <footer>
           <div className="column">
             <h3 className="header">My Social Media</h3>
-            <a target="_blank" href="https://www.facebook.com/profile.php?id=100076263414741" className="social">Facebook</a>
-            <a target="_blank" href="https://twitter.com/lucashoggan" className="social">Twitter</a>
-            <a target="_blank" href="https://www.instagram.com/lucashoggan08/" className="social">Instagram</a>
+            <a rel="noreferrer" target="_blank" href="https://www.facebook.com/profile.php?id=100076263414741" className="social">Facebook</a>
+            <a rel="noreferrer" target="_blank" href="https://twitter.com/lucashoggan" className="social">Twitter</a>
+            <a rel="noreferrer" target="_blank" href="https://www.instagram.com/lucashoggan08/" className="social">Instagram</a>
+          </div>
+          <div className="column">
+            <h3 className="header">My Email</h3>
+            <p className="text">lucashoggan@yahoo.com</p>
+            <button className="copy"
+              onClick = {() => navigator.clipboard.writeText("lucashoggan@yahoo.com")}
+            >Click to copy</button>
           </div>
         </footer>
       </main>

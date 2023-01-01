@@ -93,14 +93,33 @@ footer .column a.social {
   display: block;
   margin-top: 0.1rem;
 }
+footer .column a.social:hover {
+  color: #f7567c;
+}
 footer .column .text {
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: #99e1d9;
+  font-family: Lobster;
+  margin-top: 0.5rem;
+}
+footer .column button.copy {
+  background-color: transparent;
+  border: 0;
+  color: #99e1d9;
+  font-family: "Roboto Mono";
+  display: block;
+  margin: 0.1rem auto;
+  font-size: 1.25rem;
+}
+footer .column button.copy:hover {
+  color: rgb(46, 46, 46);
+  background-color: #99e1d9;
 }
 
 #home-page-good-photo-1 {
   width: 17rem;
+  height: 34rem;
   border-radius: 5px;
   box-shadow: 4px 4px #fcfcfc;
-  aspect-ratio: 1/2;
+  aspect-ratio: 0.5 !important;
 }/*# sourceMappingURL=globals.css.map */
