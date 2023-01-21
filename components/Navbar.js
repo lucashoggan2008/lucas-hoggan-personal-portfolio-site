@@ -1,19 +1,19 @@
 import React from 'react'
-
+import Link from 'next/link'
 
 const Navbar = () => {
   return (
     <nav>
-        <a href="/" className="header-link">
+        <Link href="/" className="header-link">
           <h1 className="title-text">Lucas Hoggan</h1>
-        </a>
+        </Link>
         <div className="arangement">
-          <a href="/my-work" className="my-work-btn">
+          <Link href="/my-work" className="my-work-btn">
               MY WORK
-          </a>
-          <a href="/the-gym" className="my-work-btn">
+          </Link>
+          <Link href="/the-gym" className="my-work-btn">
               THE GYM
-          </a>
+          </Link>
         </div>
     </nav>
   )
