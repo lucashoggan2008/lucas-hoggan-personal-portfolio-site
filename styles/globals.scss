@@ -1,4 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Gravitas+One&family=Anton&family=Lobster&family=Roboto+Mono&display=swap');
+/*
+$pallete-1a: #fcfcfc;
+$pallete-2a: #f7567c;
+$pallete-3a: #fffae3;
+$pallete-4a: #99e1d9;
+$pallete-5a: #5d576b;
+$pallete-6a: #1f1c22;
+
+
+
+$pallete-1c: #C2F216;
+$pallete-2c: #85A60F;
+$pallete-3c: #5C730A;
+$pallete-4c: #EBF21B;
+$pallete-5c: #0D0D0D;
+
+$pallete-1d: #F2EAE4;
+$pallete-2d: #736F6C;
+$pallete-3d: #262524;
+$pallete-4d: #BFB8B4;
+$pallete-5d: #0D0D0D;
+*/
+$pallete-1: #8C1F28;
+$pallete-2: #591C21;
+$pallete-3: #044040;
+$pallete-4: #D92525;
+$pallete-5: #F2F2F2;
+
+@keyframes turn-90 {
+    from {
+        transform:rotate(0deg);
+        
+    }
+    to {
+        transform:rotate(90deg);
+        
+    }
+}
+
+@keyframes cropper-ani {
+    from {
+        width: 0%;
+        
+    }
+    to {
+        width: 100%;
+        
+    }
+}
+
+@keyframes underline {
+    from {
+        
+    }
+    to {
+        border-bottom: #044040 5px solid;
+    }
+}
+
+@keyframes g-to-r {
+    from {
+        color: $pallete-3;
+    }
+
+    to {
+        color: $pallete-4;
+    }
+}
 
 html, body {
     max-width: 100%;
@@ -9,411 +81,99 @@ html, body {
     margin: 0;
 }
 
-$pallete-1: #fcfcfc;
-$pallete-2: #f7567c;
-$pallete-3: #fffae3;
-$pallete-4: #99e1d9;
-$pallete-5: #5d576b;
-$pallete-6: #1f1c22;
-
 em {
-    color: $pallete-4;
+    font-style: normal;
+    font-weight: 750;
+    color: $pallete-3
 }
 
-nav {
-    height: 3.5em;
-    background-color: $pallete-5;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 200,
+    'opsz' 40
+  }
+
+#drop-down-icon {
+    font-size: 4rem;
+}
+
+.dropdown-content {
+    display: none;
+    z-index: 99;
     position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    gap: 10rem;
-
-    .header-link {
-        text-decoration: none;
-    }
-
-    .title-text {
-        font-family: Anton;
-        color: $pallete-1;
-        letter-spacing: 0.125em;
-        font-size: 2rem;
-        margin-left: 2rem;
-    }
-
-    .title-text:hover {
-        border-bottom: 3px solid $pallete-2;
-    }
-
-    .my-work-btn {
-        font-size: 2rem;
-        font-family: "Roboto Mono";
-        font-weight: bold;
-        text-decoration: none;
-        color: $pallete-4;
-    }
-
-    .my-work-btn:hover {
-        border-bottom: 3px solid $pallete-2;
-    }
-
-    .arangement {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 90%;
-        margin: 5% 0;
-        gap: 2rem;
-    }
+    top: 0;
+    left: 0;
+      
 }
 
-.main {
-    background:linear-gradient($pallete-5 0%, $pallete-5 7% , $pallete-6 100%);
-    padding: 5rem 1rem;
-    width: 100vw;
-    min-height: 100vh;
-
+.cropper {
+    overflow:hidden;
 }
 
-
-.section {
-    min-height: 3rem;
-    margin-left: -1rem;
-
-    .header {
-        font-family: Lobster;
-        text-align: center;
-        font-size: 7rem;
-        color: $pallete-3;
+.dropdown:hover {
+    #drop-down-icon {
+        animation-name: turn-90;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
     }
-
-    .paragraph {
-        text-align:center;
-        font-size: 2rem;
-        font-family: "Roboto Mono";
-        max-width: 50vw;
-        display: block;
-        margin: 0 auto;
-        color: $pallete-3;
-    }
-
-
-    .row {
-        display: flex;
-        justify-content: space-around;
-        max-width: 80vw;
-        align-items: center;
-    }
-
-    .divider {
-        height: 1px;
-        width: 70%;
-        background-color: #fffae3;
-        margin: 1.5rem auto;
-    }
-}
-
-.main.my-work {
-   
-    .title {
-        font-family: Lobster;
-        letter-spacing: 0.3rem;
-        font-size: 5rem;
-        margin-left: 15%;
-        color: $pallete-4;
-        text-decoration: underline;
-    }
-
-.main-grid {
-    width: 70%;
-    min-height: 3rem;
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    gap: 3rem;
-    margin: 2rem auto;
-
-    
-
-    .work-example-container {
-        width: 100%;
-        text-decoration: none;
-
-        .img {
-            width: 100%;
-        }
-
-        .caption {
-            font-family: "Roboto Mono";
-            color: $pallete-1;
-            padding-bottom: 1rem;
-            
-        }
-    }
-
-    .work-example-container:hover {
-        .caption {
-            border-bottom: 2px solid $pallete-4;
-        }
+    .dropdown-content {
+     display: block;   
     }
     
-}
-}
+    .cropper {
+        animation-name: cropper-ani;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(.37,.82,.27,.83);
 
-footer {
-    width: calc(100vw + 2rem);
-    min-height: 6rem;
-    background-color: rgb(46, 46, 46);
-    position: inital;
-    margin-bottom: -5rem;
-    margin-left: -1rem;
-    margin-top: 4rem;
-    display:flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    .column {
-        border-right: solid 1px black;
-        padding: 1rem;
-
-        .header {
-            font-size: 1.25rem;
-            color: $pallete-4;
-            font-family: "Roboto Mono";
-            display: block;
+        a {
+            animation-name: g-to-r;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
         }
 
-        a.social {
-            text-decoration: none;
-            color: $pallete-4;
-            font-family: Lobster;
-            display: block;
-            margin-top: 0.1rem;
-        }
-
-        a.social:hover {
-            color: $pallete-2;
-        }
-
-        .text {
-            font-size: 1rem;
-            color: $pallete-4;
-            font-family: Lobster;
-            margin-top: 0.5rem;
-
-        }
-
-        button.copy {
-            background-color: transparent;
-            border: 0;
-            color: $pallete-4;
-            font-family: "Roboto Mono";
-            display: block;
-            margin: 0.1rem auto;
-            font-size: 1.25rem;
-        }
-
-        button.copy:hover {
-            color:rgb(46, 46, 46);
-            background-color: $pallete-4;
-        }
     }
+
 }
 
-div.welcome-container {
-    width: 100%;
-    height: 100vh;
-
-    h1.title-text {
-        color: $pallete-4;
-        font-family: Anton;
-        font-size: 25vw;
-        text-align: center;
-        display: block;
-        margin: auto auto;
-    }
-
-    h2.sub-text {
-        text-align: center;
-        font-family: "Roboto Mono";
-        font-size: calc(10vw/7);
-        color: $pallete-4;
-        text-decoration: underline;
-    }
-
-    h2.sub-text:hover {
-        color: $pallete-2;
-    }
-
-    #scroll-btn {
-        display: block;
-        margin: -2vw auto 0 auto;
-        background-color: transparent;
-        border: none;
-    }
+#photo-home-1 {
+    aspect-ratio: 1;
+    height: 25vw;
+    margin-left:-10vw;
+    margin-top: 3rem;
+    position: relative;
+    border-radius: 50%;
+    
 }
 
-#home-page-good-photo-1 {
-    width: 17rem; 
-    height: 34rem;
-    border-radius: 3px; 
-    aspect-ratio: 0.5 !important;
+.nav-title:hover {
+    padding-bottom: 0.5rem;
+    animation-name: underline;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+
+
 }
 
-.main-grid {
-    display: grid;
+.para-1 {
+    $width: 30vw;
+    width: $width;
+    margin: 2rem calc((66vw - 30vw)/2) 0 calc((66vw - 30vw)/2);
+    text-align: center;
 }
 
-.main.the-gym {
-   
-    .title {
-        font-family: Lobster;
-        letter-spacing: 0.3rem;
-        font-size: 5rem;
-        margin-left: 15%;
-        margin-bottom: 0.5rem;
-        color: $pallete-4;
-        text-decoration: underline;
-        
-    }
-
-    h2.title {
-        font-size: 3rem;
-        text-decoration: none;
-    }
-
-    h3.title {
-        font-size: 2rem;
-        text-decoration: none;
-        color: $pallete-2;
-        margin-top: 1rem;
-    }
-
-    .pr-table {
-        display: grid;
-        grid-template-columns: 100%;
-        margin-left: 15%;
-        width: 70%;
-        border-top: 3px solid $pallete-2;
-        padding-top: 1rem;
-        .row {
-            display: grid;
-            grid-template-columns: 40% 60%;
-            border-bottom: 1px solid $pallete-1;
-            margin-bottom: 1rem;
-            padding-bottom: 1rem;
-            .exercise {
-                color: $pallete-1;
-            }
-            .weight {
-                color: $pallete-2;
-                text-align: center;
-            }
-
-            .exercise, .weight {
-                
-                font-size: 3.5rem;
-                font-family: "Roboto Mono"
-            }
-        }
-    }
-
-    .programming-table {
-        border-top: 3px solid $pallete-2;
-        width: 70%;
-        margin-left: 15%;
-
-        .header-row, .content-row {
-            display: grid;
-            grid-template-columns: 60% 20% 20%;
-            margin-top: 0.5rem;
-        }
-
-        .header-row {
-            .header {
-                text-align: center;
-                font-size: 1.5rem;
-                color: $pallete-1;
-                font-family: "Roboto Mono";
-            }
-        }
-
-        .content-row {
-            .content {
-                font-size: 1.5rem;
-                color: $pallete-2;
-                font-family: "Roboto Mono";
-                text-align: center;
-            }
-        }
-    }
+.social-nav-ico {
+    width: 4rem;
+    height: 4rem;
 }
 
-@media (max-width: 768px) {
-    .section .row {
-        flex-direction: column;   
-        margin: 0 auto;
-        * {
-            margin: 1rem auto;
-        }
-    }
-
-    .welcome-container #scroll-btn h2.sub-text {
-        font-size: calc(20vw/7);
-        margin-top: 3vw;
-    }
-
-    .section .header {
-        font-size: 5rem;
-    }
-
-    .section .paragraph {
-        max-width: 80vw;
-    }
-
-    #home-page-good-photo-1 {
-        width: 60vw;
-        height: 120vw;
-    }
-
-
-    .section:nth-last-child(2) {
-        margin-bottom: 10rem;
-    }
-
-    footer {
-       flex-direction: column;
-       
-       .column {
-        width: 100%;
-        border-bottom: 1px $pallete-4 solid ;
-        padding: 1rem 0;
-        
-        * {
-            text-align: center;
-        }
-
-       }
-
-    }
-
-    .main {
-        padding-top: 9rem;
-    }
-
-    nav {
-        margin-top: 3rem;
-        gap: 5rem;
-    }
-
-    .main.the-gym .pr-table .row .exercise,.main.the-gym .pr-table .row .weight {
-        font-size: 2rem;
-    }
-
-    .main.the-gym {
-        margin-left: -2rem;
-    }
-
+.circle-bg {
+    width: calc(100vw/12);
+    aspect-ratio: 1;
+    //border-radius: 50%;
 }
