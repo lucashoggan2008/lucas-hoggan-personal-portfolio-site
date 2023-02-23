@@ -4,12 +4,12 @@ import Head from 'next/head'
 
 const index = () => {
     //const circles = [[<div className={" rounded-full bg-pallete-4 w-" + cir_width + " h-" + cir_width}></div>, <div className={" rounded-full bg-pallete-3 w-" + cir_width + " h-" + cir_width}></div>, <div className={" rounded-full bg-pallete-2 w-" + cir_width + " h-" + cir_width}></div>, <div className={" rounded-full bg-pallete-1 w-" + cir_width + " h-" + cir_width}></div>, <div className={" rounded-full bg-pallete-5 w-" + cir_width + " h-" + cir_width}></div>]*3]
-    const circles = Array(120).fill().map(item => ([
-    <div className="circle-bg bg-pallete-1"></div>,
-    <div className="circle-bg bg-pallete-2"></div>,
-    <div className="circle-bg bg-pallete-3"></div>,
-    <div className="circle-bg bg-pallete-4"></div>,
-    <div className="circle-bg bg-pallete-5"></div>]))
+    const circles = Array(120).fill().map((element, index) => ([
+    <div key={index+"a"} className="circle-bg bg-pallete-1"></div>,
+    <div key={index+"b"} className="circle-bg bg-pallete-2"></div>,
+    <div key={index+"c"} className="circle-bg bg-pallete-3"></div>,
+    <div key={index+"d"} className="circle-bg bg-pallete-4"></div>,
+    <div key={index+"e"} className="circle-bg bg-pallete-5"></div>]))
     return (
     <>
     <Head>
