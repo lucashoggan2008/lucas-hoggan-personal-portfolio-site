@@ -43,7 +43,7 @@ export default function Home() {
           <div className="w-2/3 h-screen ">
             <div className="flex align-middle justify-start w-screen">
               <p className="para-1 w-1/6 my-18 text-center sm:text-5xl text-sm font-quicksand font-thin">
-                Hello my name is Lucas Hoggan. I'm a <em>freelance web developer</em> who helps businesses and induvials increase their client base and professinalism by creating a good looking, well layed out and easy to use websites.
+                Hello my name is Lucas Hoggan. I&aposm a <em>freelance web developer</em> who helps businesses and induvials increase their client base and professinalism by creating a good looking, well layed out and easy to use websites.
               </p>
               <img id="photo-home-1" src="/20230222_210926.jpg" className="" />
             </div>
