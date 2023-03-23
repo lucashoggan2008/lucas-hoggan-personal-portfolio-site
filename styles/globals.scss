@@ -72,6 +72,27 @@ $pallete-5: #F2F2F2;
     }
 }
 
+@keyframes left-to-right {
+    0% {
+        width:100vw;
+    }
+
+    
+
+    100% {
+        width: 30vw;
+    }
+}
+
+html:not([data-scoll='0']) {
+    #photo-home-1 {
+        animation-name: turn-90;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+}
+
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -150,6 +171,8 @@ em {
     
 }
 
+
+
 .nav-title:hover {
     padding-bottom: 0.5rem;
     animation-name: underline;
@@ -177,3 +200,39 @@ em {
     aspect-ratio: 1;
     //border-radius: 50%;
 }
+
+
+.tag-sect {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+
+    h3 {
+        color: #F2F2F2;
+        text-align: left;
+        font-size: 2.5rem;
+        background-color: #591C21;
+        padding: 0.5rem 0 0.5rem 1rem;
+    }
+
+    div {
+        min-height: 2rem;
+        background-color: #044040;
+
+        p {
+            padding: 2rem 0 2rem 5rem;
+            font-size: 1.5rem;
+            color: #F2F2F2;
+            max-width: 60vw; 
+
+            i {
+                color: #d6b657;
+            }
+
+        }
+    }
+
+    
+}
+

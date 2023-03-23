@@ -15,9 +15,7 @@ email btn
 
 const Footer = () => {
   return (
-    <footer>
-          
-      
+    <footer>      
         </footer>
   )
 }
