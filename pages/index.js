@@ -70,7 +70,7 @@ export default function Home() {
           <div className="tag-sect">
               <h3 className='font-gloock'>&lt;p&gt;</h3>
               <div className="">
-                  <p className='font-quicksand font-semi-bold'>Hello, my name is Lucas Hoggan. I'm a <i>freelance web developer</i> who helps businesses and individuals increase their client base and professionalism by creating good-looking, well laid and easy-to-use websites.</p>
+                  <p className='font-quicksand font-semi-bold'>Hello, my name is Lucas Hoggan. I&apos;m a <i>freelance web developer</i> who helps businesses and individuals increase their client base and professionalism by creating good-looking, well laid and easy-to-use websites.</p>
               </div>
               <h3 className='font-gloock'>&lt;/p&gt;</h3>
           </div>
