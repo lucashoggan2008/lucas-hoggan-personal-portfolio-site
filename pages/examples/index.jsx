@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../../components/Navbar'
 import Head from 'next/head'
+import Link from 'next/link'
 
 const index = () => {
     //const circles = [[<div className={" rounded-full bg-pallete-4 w-" + cir_width + " h-" + cir_width}></div>, <div className={" rounded-full bg-pallete-3 w-" + cir_width + " h-" + cir_width}></div>, <div className={" rounded-full bg-pallete-2 w-" + cir_width + " h-" + cir_width}></div>, <div className={" rounded-full bg-pallete-1 w-" + cir_width + " h-" + cir_width}></div>, <div className={" rounded-full bg-pallete-5 w-" + cir_width + " h-" + cir_width}></div>]*3]
@@ -25,12 +26,12 @@ const index = () => {
     <main className="main">
         <Navbar />
         
-          <a className=" w-screen hover:border-4 border-gray-700 border my-5" href="/examples/1">
+          <Link className=" w-screen hover:border-4 border-gray-700 border my-5" href="/examples/1">
             
               <h2 className="text-xl text-center my-5 font-semibold">Example website - 1</h2>
               <img className="w-2/3 mx-auto block my-2" src="/example-1.png" alt="website-example-1" />
             
-          </a>
+          </Link>
         
     </main>
     </>
