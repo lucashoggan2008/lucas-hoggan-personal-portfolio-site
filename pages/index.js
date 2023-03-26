@@ -64,7 +64,7 @@ export default function Home() {
         
           
   
-          <p className="code font-quicksand font-bold text-gray-300 w-screen bg-pallete-3 p-5 text-4xl text-center">&lt;title&gt; Lucas Hoggan &lt;/title&gt;
+          <p className="code font-gloock font-bold text-gray-300 w-screen bg-pallete-3 p-5 text-4xl text-center">&lt;title&gt; Lucas Hoggan &lt;/title&gt;
           </p>
 
           <div className="tag-sect">
@@ -75,10 +75,23 @@ export default function Home() {
               <h3 className='font-gloock'>&lt;/p&gt;</h3>
           </div>
 
-          <div className="tag-sect">
-            <h3 className="font-gloock">&lt;img&gt;</h3>
-            <div><img className='mx-auto my-4 rounded-sm' src="/g-p.jpg" alt="" /></div>
-            <h3 className="font-gloock">&lt;/img&gt;</h3>
+          <div class="grid grid-cols-3">
+            
+            <div className="tag-sect">
+              <h3 className="font-gloock">&lt;img&gt;</h3>
+              <div><img className='mx-auto my-4 rounded-sm sm:w-1/3 w-1/2' src="/good-photo-4.jpg" alt="" /></div>
+              <h3 className="font-gloock">&lt;/img&gt;</h3>
+            </div>
+            <div className="tag-sect">
+              <h3 className="font-gloock">&lt;img&gt;</h3>
+              <div><img className='mx-auto my-4 rounded-sm sm:w-1/3 w-1/2' src="/good-photo-5.jpg" alt="" /></div>
+              <h3 className="font-gloock">&lt;/img&gt;</h3>
+            </div>
+            <div className="tag-sect">
+              <h3 className="font-gloock">&lt;img&gt;</h3>
+              <div><img className='mx-auto my-4 rounded-sm sm:w-1/3 w-1/2' src="/good-photo-6.jpg" alt="" /></div>
+              <h3 className="font-gloock">&lt;/img&gt;</h3>
+            </div>
           </div>
 
         

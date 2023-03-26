@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className="flex justify-start h-20 sm:h-28  gap-16 p-2 sm:p-5 align-middle bg-pallete-5">
       <div className="dropdown h-20 sm:h-28 ">
-          <span id="drop-down-icon" className="material-symbols-outlined sm:text-9xl text-xl my-4 sm:m-auto block">
+          <span id="drop-down-icon" className="material-symbols-outlined sm:text-9xl text-xl my-4 sm:m-2 block">
           menu
         </span>
         <div className="dropdown-content w-screen">
