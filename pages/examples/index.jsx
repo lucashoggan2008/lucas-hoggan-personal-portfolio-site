@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 const index = () => {
     //const circles = [[<div className={" rounded-full bg-pallete-4 w-" + cir_width + " h-" + cir_width}></div>, <div className={" rounded-full bg-pallete-3 w-" + cir_width + " h-" + cir_width}></div>, <div className={" rounded-full bg-pallete-2 w-" + cir_width + " h-" + cir_width}></div>, <div className={" rounded-full bg-pallete-1 w-" + cir_width + " h-" + cir_width}></div>, <div className={" rounded-full bg-pallete-5 w-" + cir_width + " h-" + cir_width}></div>]*3]
-    const circles = Array(3).fill().map((element, index) => ([
+    const circles = Array(15).fill().map((element, index) => ([
     <div key={index+"a"} className="circle-bg bg-pallete-1"></div>,
     <div key={index+"b"} className="circle-bg bg-pallete-2"></div>,
     <div key={index+"c"} className="circle-bg bg-pallete-3"></div>,
@@ -24,10 +24,13 @@ const index = () => {
       </Head>
     <main className="main">
         <Navbar />
-        <div className="grid grid-cols-12 -z-10 w-screen">
-            {circles}
-        </div>
-        <div className="examples-grid grid sm:grid-cols-3 grid-cols-1"></div>
+        
+          <a className=" w-screen hover:border-4 border-gray-700 border my-5" href="/examples/1">
+            
+              <h2 className="text-xl text-center my-5 font-semibold">Example website - 1</h2>
+              <img className="w-2/3 mx-auto block my-2" src="/example-1.png" alt="website-example-1" />
+            
+          </a>
         
     </main>
     </>
