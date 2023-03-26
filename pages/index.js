@@ -59,7 +59,7 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Quicksand&display=swap" rel="stylesheet" />
       </Head>
-      <main className="main h-screen">
+      <main className="main">
         <Navbar />
         
           
@@ -75,7 +75,7 @@ export default function Home() {
               <h3 className='font-gloock'>&lt;/p&gt;</h3>
           </div>
 
-          <div class="grid grid-cols-3">
+          <div class="grid sm:grid-cols-2 md:grid-cols-3 xs:grid-cols-1">
             
             <div className="tag-sect">
               <h3 className="font-gloock">&lt;img&gt;</h3>
