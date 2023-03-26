@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 
 const stylesheet = {
     navbar: {
@@ -33,10 +34,10 @@ const index = () => {
     <main className="main bg-black" style={{height:"100vh"}}>
         <nav style={stylesheet.navbar}>
             <h1 className="font-gloock text-lg sm:text-3xl" style={stylesheet.navbar.header1}>Your-Company</h1>
-            <a className="font-quicksand text-base font-bold text-white text-center my-auto border-stone-500 hover:border-b-4 sm:text-xl" href="https://www.google.com">PAGE-1</a>
-            <a className="font-quicksand text-base font-bold text-white text-center my-auto border-stone-500 hover:border-b-4 sm:text-xl" href="https://www.google.com">PAGE-2</a>
-            <a className="font-quicksand text-base font-bold text-white text-center my-auto border-stone-500 hover:border-b-4 sm:text-xl" href="https://www.google.com">PAGE-3</a>
-            <a className="font-quicksand text-base font-bold text-white text-center my-auto border-stone-500 hover:border-b-4 sm:text-xl" href="https://www.google.com">PAGE-4</a>
+            <Link className="font-quicksand text-base font-bold text-white text-center my-auto border-stone-500 hover:border-b-4 sm:text-xl" href="https://www.google.com">PAGE-1</Link>
+            <Link className="font-quicksand text-base font-bold text-white text-center my-auto border-stone-500 hover:border-b-4 sm:text-xl" href="https://www.google.com">PAGE-2</Link>
+            <Link className="font-quicksand text-base font-bold text-white text-center my-auto border-stone-500 hover:border-b-4 sm:text-xl" href="https://www.google.com">PAGE-3</Link>
+            <Link className="font-quicksand text-base font-bold text-white text-center my-auto border-stone-500 hover:border-b-4 sm:text-xl" href="https://www.google.com">PAGE-4</Link>
         </nav>
         <h1 className="text-2xl text-center bg-slate-400 py-5 font-bold font-gloock">How we can help you.</h1>        
         <div className="bg-green-100">
