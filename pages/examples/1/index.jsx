@@ -31,7 +31,7 @@ const index = () => {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Quicksand&display=swap" rel="stylesheet" />
     </Head>
-    <main className="main bg-black" style={{height:"100vh"}}>
+    <main className="main bg-black" style={{minHeight:"100vh"}}>
         <nav style={stylesheet.navbar}>
             <h1 className="font-gloock text-lg sm:text-3xl" style={stylesheet.navbar.header1}>Your-Company</h1>
             <Link className="font-quicksand text-base font-bold text-white text-center my-auto border-stone-500 hover:border-b-4 sm:text-xl" href="https://www.google.com">PAGE-1</Link>
