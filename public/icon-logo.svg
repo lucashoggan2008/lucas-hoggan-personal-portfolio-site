@@ -1,0 +1,15 @@
+<svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1000" height="1000" fill="#403D39"/>
+<rect x="290" y="290" width="160" height="420" rx="20" fill="#FFFCF2"/>
+<rect x="290" y="550" width="306" height="160" rx="20" fill="#FFFCF2"/>
+<line x1="372.5" y1="290" x2="372.5" y2="630" stroke="#403D39" stroke-width="5"/>
+<line x1="370" y1="627.5" x2="596" y2="627.5" stroke="#403D39" stroke-width="5"/>
+<path d="M460 310C460 298.954 468.954 290 480 290H690C701.046 290 710 298.954 710 310V520C710 531.046 701.046 540 690 540H480C468.954 540 460 531.046 460 520V310Z" fill="#EB5E28"/>
+<rect x="510" y="290" width="150" height="100" fill="#403D39"/>
+<rect x="510" y="440" width="150" height="100" fill="#403D39"/>
+<line x1="485" y1="412.5" x2="685" y2="412.5" stroke="#403D39" stroke-width="5"/>
+<line x1="487.5" y1="415" x2="487.5" y2="290" stroke="#403D39" stroke-width="5"/>
+<line x1="487.5" y1="540" x2="487.5" y2="415" stroke="#403D39" stroke-width="5"/>
+<line x1="682.5" y1="415" x2="682.5" y2="290" stroke="#403D39" stroke-width="5"/>
+<line x1="682.5" y1="540" x2="682.5" y2="415" stroke="#403D39" stroke-width="5"/>
+</svg>

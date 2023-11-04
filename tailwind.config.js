@@ -1,21 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./pages/*.js",
+    "./pages/*.{js, jsx}",
     "./components/*.jsx",
     "./components/*.js",
-    "./pages/examples/*.jsx",
-    "./pages/examples/**/*.jsx",
   ],
   theme: {
     extend: {
       colors: {
         pallete: {
-          1: '#8C1F28',
-          2: '#591C21',
-          3: '#044040',
-          4: '#D92525',
-          5: '#F2F2F2'
+          flame: "#EB5E28",
+          olive: "#403D39",
+          floral: "#FFFCF2",
+          green: "#87CD6E"
         }
       },
       'fontFamily':{
