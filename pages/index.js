@@ -30,19 +30,9 @@ export default function Home() {
 
   return (
     <>
-<<<<<<< HEAD
       <Navbar />
       <MainPage />
       
-=======
-      <Head>
-        <title>Lucas Hoggan</title>
-        <meta name="description" content="The website of Lucas Hoggan." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-     
->>>>>>> ddb567c7e713216a4a4dd1cd673f7323637f79f2
     </>
   )
 }
