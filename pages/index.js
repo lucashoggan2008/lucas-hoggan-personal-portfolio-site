@@ -10,7 +10,7 @@ import {Parallax, ParallaxLayer} from "@react-spring/parallax"
 
 const SocialLink = ({url, text, newtab}) => {
   return (
-    <a href={url} target={newtab ? "_blank" : "_self"}>
+    <a href={url} rel="noreferrer" target={newtab ? "_blank" : "_self"}>
       <p className="text-pallete-flame font-semibold text-center">{text}</p>
     </a>
   )
